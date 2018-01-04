@@ -13,7 +13,7 @@ A Flickr feed preview app built in React.
 
 ## Getting started
 
-Check out a [working demo](https://react-flikr-app.firebaseapp.com/).
+Check out a [working demo](https://react-flickr-app.firebaseapp.com/).
 
 ### `npm install`
 

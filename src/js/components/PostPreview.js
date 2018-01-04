@@ -51,7 +51,7 @@ const PostPreview = ({
             className="post-preview__icon"
             glyph={require('../../images/sprite/eye.svg')}
           />
-          View on Flikr
+          View on Flickr
         </a>
       </div>
     </div>
