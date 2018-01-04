@@ -1,0 +1,9 @@
+.footer {
+  padding: $baseline 0;
+  background: #262740;
+  text-align: center;
+  font-size: 14px;
+  @media (min-width: 1000px) {
+    padding: $baseline * 1.5 0;
+  }
+}

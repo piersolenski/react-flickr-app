@@ -1,0 +1,64 @@
+.photo__title {
+  font-size: 21px;
+  color: $white;
+  line-height: 1.6em;
+}
+
+.photo__header {
+  margin-bottom: $baseline;
+  animation: fade-up 0.25s ease;
+}
+
+.photo__user {
+  @media (max-width: 999px) {
+    margin-bottom: $baseline/2;
+    display: block;
+  }
+  @media (min-width: 1000px) {
+    margin-right: 16px;
+  }
+}
+
+.photo__main {
+  animation: fade-up 0.25s ease 0.125s both;
+  @media (min-width: 1000px) {
+    display: flex;
+    align-items: start;
+  }
+}
+
+.photo__image {
+  border-radius: 4px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+  display: block;
+  margin-bottom: $baseline;
+  @media (min-width: 1000px) {
+    width: 70%;
+  }
+}
+
+.photo__info {
+  @media (min-width: 1000px) {
+    width: 30%;
+    padding-left: $baseline * 1.5;
+  }
+}
+
+.photo__description {
+  line-height: 24px;
+  margin-bottom: $baseline;
+}
+
+.photo__subtitle {
+  color: $white;
+  font-size: 16px;
+}
+
+.photo__icon {
+  color: #4f5079;
+  height: 16px;
+  width: 16px;
+  vertical-align: bottom;
+  margin-right: 8px;
+}

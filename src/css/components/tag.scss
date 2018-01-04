@@ -1,0 +1,14 @@
+.tag {
+  margin-bottom: 8px;
+  @media (max-width: 599px) {
+    font-size: 14px;
+  }
+}
+
+.tag__icon {
+  height: 16px;
+  width: 16px;
+  color: #4f5079;
+  vertical-align: bottom;
+  margin-right: 8px;
+}

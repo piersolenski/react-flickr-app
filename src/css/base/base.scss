@@ -1,0 +1,48 @@
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+  font-family: 'Muli', sans-serif;
+  font-weight: 400;
+  background: #2b2b49;
+  color: #b6b6c0;
+}
+
+*,
+*:after,
+*:before {
+  box-sizing: inherit;
+}
+
+body {
+  position: relative;
+  overflow-y: scroll;
+}
+
+a {
+  @include link-colors(#EB78F9, #EB78F9, #EB78F9, #EB78F9);
+  text-decoration: none;
+}
+
+*::selection {
+  background: $black;
+  text-shadow: none;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+#app {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main {
+  flex: 1 0 auto;
+  padding: $baseline 0;
+  @media (min-width: 600px) {
+    padding: $baseline * 2 0;
+  }
+}

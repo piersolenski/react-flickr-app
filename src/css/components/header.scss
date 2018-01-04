@@ -1,0 +1,19 @@
+.header {
+  background: #262740;
+}
+
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  @media (min-width: 1000px) {
+    height: 100px;
+  }
+}
+
+.header__logo {
+  height: $baseline;
+  width: 72.6px;
+  color: $white;
+}

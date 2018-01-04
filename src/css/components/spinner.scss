@@ -1,0 +1,35 @@
+.spinner,
+.spinner:before,
+.spinner:after {
+  border-radius: 50%;
+  width: 12px;
+  height: 12px;
+  animation-fill-mode: both;
+  animation: spinner 1.8s infinite ease-in-out;
+}
+
+.spinner {
+  color: $white;
+  margin: 80px auto;
+  position: relative;
+  text-indent: -9999em;
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  animation-delay: -0.16s;
+}
+
+.spinner:before,
+.spinner:after {
+  content: '';
+  position: absolute;
+  top: 0;
+}
+
+.spinner:before {
+  left: -16px;
+  animation-delay: -0.32s;
+}
+
+.spinner:after {
+  left: 16px;
+}

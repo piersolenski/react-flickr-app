@@ -1,0 +1,23 @@
+.search-bar {
+  position: relative;
+}
+
+.search-bar__input {
+  width: 100%;
+  height: $baseline * 2;
+  line-height: $baseline * 2;
+  border: 0;
+  border-radius: 10px;
+  margin-bottom: $baseline;
+  background: #424368;
+  color: $white;
+  padding: 0 $baseline / 1.5 0 $baseline * 1.6;
+}
+
+.search-bar__icon {
+  position: absolute;
+  top: $baseline / 1.5;
+  left: $baseline / 2;
+  height: 16px;
+  width: 16px;
+}
