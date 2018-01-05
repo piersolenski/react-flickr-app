@@ -1,6 +1,6 @@
 .button {
   @include link-colors($white,$white,$white,$white);
-  background: linear-gradient(-45deg, #ffd235, #eb78f9);
+  background: linear-gradient(-45deg, #ffd235, $purple-light);
   line-height: $baseline*1.5;
   padding: 0 $baseline;
   border-radius: 5px;

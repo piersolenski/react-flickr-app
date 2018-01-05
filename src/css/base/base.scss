@@ -3,7 +3,7 @@ html {
   font-size: 100%;
   font-family: 'Muli', sans-serif;
   font-weight: 400;
-  background: #2b2b49;
+  background: $purple-medium;
   color: #b6b6c0;
 }
 
@@ -19,7 +19,7 @@ body {
 }
 
 a {
-  @include link-colors(#EB78F9, #EB78F9, #EB78F9, #EB78F9);
+  @include link-colors($purple-light, $purple-light, $purple-light, $purple-light);
   text-decoration: none;
 }
 
