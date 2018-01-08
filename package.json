@@ -25,6 +25,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
+    "deploy": "npm run build && firebase deploy",
     "lint:js": "eslint src/js/**/*.js",
     "lint:scss": "sass-lint 'src/css/**/*.scss' -v -q",
     "precommit": "lint-staged",
