@@ -8,6 +8,7 @@ A Flickr feed preview app built in React.
 * React Router
 * SCSS
 * Autoprefixer
+* Responsive Images
 * SVG sprites
 * Automatic polyfilling (using Polyfill.io)
 
