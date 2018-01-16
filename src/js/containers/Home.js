@@ -1,13 +1,13 @@
 // Dependencies
-import React, { Component } from 'react';
+import React, { Component } from "react";
 // Components
-import PostPreview from '../components/PostPreview';
-import SearchBar from '../components/SearchBar';
-import Spinner from '../components/Spinner';
+import PostPreview from "../components/PostPreview";
+import SearchBar from "../components/SearchBar";
+import Spinner from "../components/Spinner";
 // Services
-import flickrAPI from '../services/flickrAPI';
+import flickrAPI from "../services/flickrAPI";
 
-import { getID } from '../utils/posts';
+import { getID } from "../utils/posts";
 
 class Home extends Component {
   constructor() {
@@ -17,7 +17,7 @@ class Home extends Component {
     };
   }
   componentWillMount() {
-    flickrAPI('feeds/photos_public.gne?tags=potato&tagmode=all', 'feed')
+    flickrAPI("feeds/photos_public.gne?tags=potato&tagmode=all", "feed")
       .then(res => {
         this.setState({
           items: res.items,
@@ -27,7 +27,8 @@ class Home extends Component {
       })
       .catch(err => {
         this.setState({
-          error: true
+          error: true,
+          loaded: true
         });
       });
   }
@@ -48,6 +49,7 @@ class Home extends Component {
         {error && <p>Oops! Something went wrong...</p>}
         <div className="posts">
           {loaded &&
+            !error &&
             filteredItems.map((item, i) => (
               <PostPreview
                 key={i}

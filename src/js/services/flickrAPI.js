@@ -1,7 +1,7 @@
 // Dependencies
-import fetchJsonp from 'fetch-jsonp';
+import fetchJsonp from "fetch-jsonp";
 // Data
-import CONFIG from '../../data/config.json';
+import CONFIG from "../../data/config.json";
 
 export default function flickrAPI(params, callback) {
   return fetchJsonp(
@@ -13,5 +13,7 @@ export default function flickrAPI(params, callback) {
     }
   )
     .then(response => response.json())
-    .catch(ex => ex);
+    .catch(err => {
+      throw new Error(err);
+    });
 }
