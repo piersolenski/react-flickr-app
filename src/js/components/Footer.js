@@ -1,10 +1,11 @@
 // Dependencies
-import React from 'react';
+import React from "react";
 
 const Footer = () => (
   <footer className="footer">
     <span>
-      © <a href="https://piersolenski.com/">Piers Olenski</a> 2018
+      ©{new Date().getFullYear()}{" "}
+      <a href="https://piersolenski.com/">Piers Olenski</a>
     </span>
   </footer>
 );
